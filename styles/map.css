@@ -1,0 +1,32 @@
+
+
+#map {
+  position: relative;
+  top: 0;
+  height:100%;
+}
+
+.marker_g {
+  background-image: url('../img/ping.png');
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;   
+}
+.marker_r {
+  background-image: url('../img/pong.png');
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;   
+}
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}

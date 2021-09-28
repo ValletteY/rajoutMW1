@@ -1,0 +1,76 @@
+var donnees = {
+    "type": "FeatureCollection",
+    "features": 
+        [{
+        "type": "Feature",
+        "geometry": 
+            {
+            "type": "Point",
+            "coordinates": [2.4904, 48.8474]
+            },
+        "properties": 
+            {
+            "title": "Entree Bat A",
+            "validation":true,
+            "description": "On est passé"
+            }
+        },
+        {
+        "type": "Feature",
+        "geometry": 
+            {
+            "type": "Point",
+            "coordinates": [2.4912, 48.8474]
+            },
+        "properties": 
+            {
+            "title": "Terrain bas",
+            "validation":false,
+            "description": "fin"
+            }
+        },
+        
+        {
+        "type": "Feature",
+        "geometry": 
+            {
+            "type": "Point",
+            "coordinates": [2.49125, 48.84696]
+            },
+        "properties": 
+            {
+            "title": "Bat Admin",
+            "validation":false,
+            "description": " pas encore passé"
+            }
+        },
+        {
+        "type": "Feature",
+        "geometry": 
+            {
+            "type": "Point",
+            "coordinates": [2.49079, 48.84685]
+            },
+        "properties": 
+            {
+            "title": "Entree gym/pro",
+            "validation":false,
+            "description": " ca semble marché"
+            }
+        },
+        {
+        "type": "Feature",
+        "geometry": 
+            {
+            "type": "Point",
+            "coordinates": [2.4904, 48.8472]
+            },
+        "properties": 
+            {
+            "title": "Entree Bat B",
+            "validation":true,
+            "description": " presque"
+            }
+        }
+    ]
+};

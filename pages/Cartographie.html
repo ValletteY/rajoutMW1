@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8" />
+    <title>BTS SNIR - Dev WEB</title>
+    <link href="../styles/map.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="../styles/ossature_grid.css">
+    <link rel="stylesheet" type="text/css" href="../styles/design.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Appel des fonctions Mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
+    
+</head>
+<nav id="barre_navigation">
+    <div>
+      <a href="../index.html">Présentation</a>
+    </div>
+    <div>
+      <a href="#">Suivi</a>
+    </div>
+    <div>
+      <a href="../pages/formulaire_inscription.html">Connexion</a>
+    </div>
+    <div>
+      <a href="../pages/formulaire_inscription.html">Inscription</a>
+    </div>
+    <div>
+      <a href="../pages/Cartographie.html">Cartographie</a>
+    </div>
+  </nav>
+
+<body>
+    <header>
+        <img id="hamburger" src="../img/MyHamburger.png">
+        <h1>Dron'ir</h1>
+    </header>
+
+    <section>
+        <div id='map'></div>
+    </section>
+
+    <aside>
+        <h1>affichage des coordonnes</h1>
+        <ul id="menu"></ul>
+    </aside>
+
+    <footer>
+        <div>
+          <h1>Les drones :</h1>
+          <a href="https://www.ryzerobotics.com/fr/tello">Le drone Tello</a>
+          <a href="https://www.dji.com/fr/mavic">Le Mavic Pro</a>
+        </div>
+        <div>
+          <h1>Les règles de vol :</h1>
+          <a href="https://www.service-public.fr/particuliers/vosdroits/F34630">Le site officiel du service public</a>
+        </div>
+        <div>
+          <h1>A propos :</h1>
+          <a href="../../00_LeCV/index.html" alt="Mon CV">Consulter mon CV</a>
+          <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Tout sur les Grid CSS</a>
+          <button id="dark_light">Mode sombre</button>
+        </div>
+    </footer>
+</body>
+    <script src="../js/dark_light.js"></script>
+    <script src="../js/navigation.js"></script>
+        <!-- introduction des données -->
+    <script src="../donnees/donnees.geojson" type="text/javascript"></script>
+        <!-- Dessin de la map dans map -->
+    <script src='../js/carto.js'></script>
+         <!-- Ecriture de la latitude/logitude  -->
+    <script src='../js/ecriturelatlong.js'></script> 
+</body>
+</html>
